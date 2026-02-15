@@ -1,0 +1,45 @@
+$primary: #111;
+$accent: #c89b3c;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+  padding: 0 2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  span {
+    color: $accent;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+
+  li a {
+    text-decoration: none;
+    color: $primary;
+    font-weight: 500;
+    position: relative;
+
+    &.active,
+    &:hover {
+      color: $accent;
+    }
+  }
+}
